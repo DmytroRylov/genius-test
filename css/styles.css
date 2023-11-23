@@ -35,6 +35,12 @@
   --color-secondary-dark: #a18268;
 }
 /* Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   color: var(--color-primary-dark);
   background-color: var(--color-primary-lite);
@@ -53,6 +59,10 @@ h5,
 h6,
 p {
   margin-top: 0;
+}
+
+a {
+ display: inline-block; 
 }
 
 address {
@@ -147,6 +157,15 @@ ul {
 .hero-title .accent {
   color: var(--color-brand-normal);
 }
+
+.hero-section {
+  padding: 272px 0;
+  background-image: url(../img/couple-in-bakery.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
 /* Advantages section */
 .advantages-section {
   background-color: var(--color-brand-normal);
@@ -212,14 +231,6 @@ ul {
 }
 
 /* Chefs section */
-.hero-section {
-  padding: 272px 0;
-  background-image: url(../img/couple-in-bakery.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-}
-
 .chefs-title {
   max-width: 520px;
   margin: 0 auto 80px;
@@ -231,6 +242,16 @@ ul {
   width: 352px;
   border: 2px solid var(--color-brand-lite);
   content: '';
+}
+
+.chefs-list {
+  display: flex;
+  gap: 40px 30px;
+  flex-wrap: wrap;
+}
+
+.chefs-item {
+  flex-basis: calc((100% - 30px) / 2);
 }
 
 .chef-photo {
@@ -245,11 +266,30 @@ ul {
   font-weight: 600;
 }
 
+.chef-text p {
+margin-bottom: 24px;
+}
+
+.chef-text p:last-child {
+margin-bottom: 0;
+}
+
 .format-item {
   flex-basis: calc((100% - 40px) / 3);
 }
 
+.chef-card {
+  display: flex;
+  gap: 30px;
+}
+
 /* Format section */
+.formats-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
 .format-list {
   display: flex;
   flex-wrap: wrap;
@@ -290,6 +330,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   width: 44px;
   height: 44px;
   padding: 0;
@@ -306,11 +347,51 @@ ul {
 }
 
 /* Contact section */
+.contact-section {
+  padding-bottom: 96px;
+}
+.contact-container {
+  display: flex;
+  gap: 32px;
+}
+
 .contact-title {
   margin-bottom: 16px;
 }
 
+.contact-map {
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: 0;
+}
+
 /* Footer */
+.footer {
+  padding: 32px 0;
+}
+
+.footer-container {
+  display: flex;
+  gap 20px;
+}
+
+.footer-nav,
+.footer-addres {
+  display: flex;
+  flex-basis: 50%;
+  gap 20px;
+}
+
+.footer-logo,
+.footer-menu {
+  flex-grow: 1;
+}
+
+.address-list,
+.addres-info {
+  flex-grow: 1;
+}
+
 .address-link {
   color: var(--color-primary-lite);
   font-size: 16px;
