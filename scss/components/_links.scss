@@ -1,0 +1,11 @@
+.link {
+  color: var(--color-primary-lite);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: var(--color-brand-normal);
+  /* font-weight: 600; 
+  Убираем чтобы при наведении не прыгал шрифт*/
+}

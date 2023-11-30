@@ -13,7 +13,7 @@
       rel="stylesheet"
     /> -->
     <!-- Styles -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
@@ -141,6 +141,11 @@
           <ul class="format-list">
             <li class="format-item">
               <article class="format-card">
+              <img
+              class="format-image"
+              src="./img/walrus-format.jpg" 
+              alt="Warlus format"
+              />
                 <h3 class="format-title" lang="en">Warlus</h3>
                 <div class="format-text">
                   <p>Площа: до 120 м2</p>
@@ -153,6 +158,11 @@
             </li class="format-item">
             <li class="format-item">
               <article class="format-card">
+                 <img
+              class="format-image"
+              src="./img/horseshoe-format.jpg" 
+              alt="Horseshoe"
+              />
                 <h3 class="format-title" lang="en">Horseshoe</h3>
                 <div class="format-text">
                   <p>Площа: до 25 м2</p>
@@ -164,6 +174,11 @@
             </li>
             <li class="format-item">
               <article class="format-card">
+                <img
+              class="format-image"
+              src="./img/handlebar-format.jpg" 
+              alt="HandLebar"
+              />
                 <h3 class="format-title" lang="en">HandLebar</h3>
                 <div class="format-text">
                   <p>Площа: до 15 м2</p>
@@ -311,41 +326,54 @@
         <button class="modal-btn-close" type="button">Close</button>
         <h2>Замовити дзвінок</h2>
         <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-        <form name="modal-form" autocomplete="off" novalidate>
+        <form name="modal-form" autocomplete="on">
           <div class="form-field">
-            <label class="form-label visually-hidden" for="user-name">Ім'я</label>
+            <label class="form-label visually-hidden" for="user-name">
+              Ім'я
+            </label>
             <input
             class="form-input" 
             type="text" 
             name="user-name" 
             id="user-name"
             placeholder="Ім'я"
+            minlength="2"
+            maxlength="20"
+            required
             />
         </div>
          
           <div class="form-field">
-            <label class="form-label visually-hidden" for="user-tel">Телефон</label>
+            <label class="form-label visually-hidden" for="user-tel">
+              Телефон
+            </label>
             <input
             class="form-input" 
             type="tel" 
             name="user-tel" 
             id="user-tel"
             placeholder="Телефон"
+            required
            />
           </div>
           
           <div class="form-field">
-            <label class="form-label visually-hidden" for="user-email">Електронна пошта</label>
+            <label class="form-label visually-hidden" for="user-email">
+              Електронна пошта
+            </label>
             <input 
             class="form-input" 
             type="email" 
             name="user-email" 
             id="user-email"
             placeholder="Електронна пошта"
+            required
             />
           </div>
 
-          <button class="form-button button" type="submit">Замовити дзвінок</button>
+          <button class="form-button button" type="submit">
+            Замовити дзвінок
+          </button>
           <p class="form-terms">
             Натискаючи на кнопку я погоджуюсь з 
             <a class="form-terms-link" href="#">політикою конфіденційності</a>
