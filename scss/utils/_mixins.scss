@@ -3,3 +3,7 @@
   height: $hiight;
   background-color: $color;
 }
+
+.circle {
+  @include circle(100px, 100px, #4d1717);
+}
