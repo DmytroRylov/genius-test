@@ -4,12 +4,11 @@
 @import './utils/texts';
 @import './utils/utils';
 @import './utils/mixins';
-
 @import './components/buttons';
 @import './components/carousel-button';
 @import './components/chef-card';
 @import './components/format-card';
-@import './components/form-terms';
+
 @import './components/input';
 @import './components/links';
 
@@ -20,8 +19,9 @@
 @import './layouts/section';
 @import './layouts/traditions-section';
 @import './layouts/chefs-section';
-@import './layouts/formats-section';
 @import './layouts/form-terms';
+@import './layouts/formats-section';
+@import './layouts/modal';
+@import './layouts/mobile-menu';
 @import './layouts/contact-section';
 @import './layouts/footer-section';
-@import './layouts/modal';
